@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4% Hustle: Subscribe</title>
+  <meta name="description" content="One hour every Sunday. We read hundreds of brands' emails, do the math, and hand you the playbook.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800;6..12,900&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="brand">
+        <span class="brand__mark">4%</span>
+        <span class="brand__name">4% Hustle</span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#inside">What's inside</a>
+        <a href="#sample">Sample issue</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#subscribe" class="site-nav__cta">Subscribe free</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="top" class="container hero">
+      <div class="hero__copy">
+        <div class="eyebrow">Every Sunday · One hour of reading and doing</div>
+        <h1 class="hero__title">96% of your day belongs to other people.</h1>
+        <p class="hero__lede">The other 4% is one hour. <span class="highlight">What are you doing with it?</span></p>
+        <p class="hero__body">We subscribe to hundreds of brands, read every email they send, and reverse-engineer what makes people buy. Then we hand you the playbook, plus one founder story worth stealing from. The math. The failure modes. Zero hustle-bro nonsense.</p>
+        <!-- TODO: point action at your newsletter provider's subscribe endpoint. -->
+        <form id="subscribe" class="signup" action="#" method="post">
+          <label for="email-hero" class="signup__label">Get Sunday's issue free</label>
+          <div class="signup__row">
+            <input id="email-hero" name="email" type="email" class="signup__input" placeholder="you@example.com" autocomplete="email" required>
+            <button type="submit" class="btn btn--accent signup__button">Make my 4% count</button>
+          </div>
+          <div class="signup__note">Free. One email a week. Unsubscribe in one click.</div>
+        </form>
+      </div>
+
+      <div class="card card--shadow day">
+        <div class="day__head">
+          <div class="day__title">Your day, in hours</div>
+          <div class="day__math">1 / 24 = 4.17%</div>
+        </div>
+        <ol class="hours" aria-label="24 hours of the day; 9pm is yours">
+            <li class="hour">12a</li>
+            <li class="hour">1a</li>
+            <li class="hour">2a</li>
+            <li class="hour">3a</li>
+            <li class="hour">4a</li>
+            <li class="hour">5a</li>
+            <li class="hour">6a</li>
+            <li class="hour">7a</li>
+            <li class="hour">8a</li>
+            <li class="hour">9a</li>
+            <li class="hour">10a</li>
+            <li class="hour">11a</li>
+            <li class="hour">12p</li>
+            <li class="hour">1p</li>
+            <li class="hour">2p</li>
+            <li class="hour">3p</li>
+            <li class="hour">4p</li>
+            <li class="hour">5p</li>
+            <li class="hour">6p</li>
+            <li class="hour">7p</li>
+            <li class="hour">8p</li>
+            <li class="hour hour--mine">9p<span>YOURS</span></li>
+            <li class="hour">10p</li>
+            <li class="hour">11p</li>
+        </ol>
+        <div class="legend">
+          <div class="legend__item"><span class="swatch" aria-hidden="true"></span><span><strong>23 hours</strong> go to the boss, the commute, the dishes and sleep.</span></div>
+          <div class="legend__item"><span class="swatch swatch--mine" aria-hidden="true"></span><span><strong>1 hour</strong> is yours. We make it the most useful hour of your week.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip__inner">
+        <span class="strip__step">WE READ THEIR EMAILS</span>
+        <span class="strip__arrow" aria-hidden="true">→</span>
+        <span class="strip__step">WE DO THE MATH</span>
+        <span class="strip__arrow" aria-hidden="true">→</span>
+        <span class="strip__step strip__step--final">YOU GET THE PLAYBOOK</span>
+      </div>
+    </section>
+
+    <section id="inside" class="container section section--inside">
+      <div class="section__head">
+        <div class="eyebrow">Inside every Sunday issue</div>
+        <h2 class="section__title">Two stories and one assignment. Built to fit in one hour.</h2>
+      </div>
+      <div class="parts">
+        <article class="card part">
+          <div class="part__meta"><span class="part__num">01</span><span class="part__time">~25 MIN</span></div>
+          <h3 class="part__title">The Teardown</h3>
+          <p class="part__body">One brand's email funnel, taken apart. The offer, the hook, the sequence, the price math, and where it would break if you copied it blindly.</p>
+          <div class="part__tag">We read their emails. You get the playbook.</div>
+        </article>
+        <article class="card part part--accent">
+          <div class="part__meta"><span class="part__num">02</span><span class="part__time">~10 MIN</span></div>
+          <h3 class="part__title">The Win</h3>
+          <p class="part__body">One founder who nailed it. A real startup story, told straight: what they tried first, the moment it clicked, and the one move you can borrow.</p>
+          <div class="part__tag">Proof that one hour a day adds up.</div>
+        </article>
+        <article class="card part">
+          <div class="part__meta"><span class="part__num">03</span><span class="part__time">~25 MIN</span></div>
+          <h3 class="part__title">Your 4% Assignment</h3>
+          <p class="part__body">One thing to build, write or test this week using what you just read. Sized to finish in the time you have left in your hour.</p>
+          <div class="part__tag">Reading is optional. Doing is the point.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sample" class="sample">
+      <div class="container sample__inner">
+        <div class="sample__copy">
+          <div class="eyebrow">Sample issue</div>
+          <h2 class="section__title">What lands in your inbox Sunday morning.</h2>
+          <p class="sample__body">Screenshots of the real emails, annotated. Numbers where we have them, honest guesses labeled as guesses, and no fluff between you and the move.</p>
+          <a href="#subscribe" class="text-link">Get the next one free</a>
+        </div>
+        <div class="card card--shadow email">
+          <div class="email__head">
+            <div class="email__field"><span class="email__key">From</span><span class="email__value">Cary at 4% Hustle</span></div>
+            <div class="email__field"><span class="email__key">Subject</span><span class="email__value">[ISSUE HEADLINE: the hook from this week's Teardown]</span></div>
+          </div>
+          <div class="email__body">
+            <div class="email__part">
+              <div class="email__label">01 · THE TEARDOWN</div>
+              <div class="email__headline">How [BRAND] turns a free download into a second purchase</div>
+              <div class="email__shot">[ANNOTATED EMAIL SCREENSHOT]</div>
+            </div>
+            <div class="email__part">
+              <div class="email__label">02 · THE WIN</div>
+              <div class="email__headline">[FOUNDER] started on nights and weekends. Here's the move that worked.</div>
+            </div>
+            <div class="email__part">
+              <div class="email__label">03 · YOUR 4% ASSIGNMENT</div>
+              <div class="email__task"><span class="checkbox" aria-hidden="true"></span><span>[ONE TASK THAT FITS IN AN HOUR]</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="container section">
+      <div class="section__head">
+        <div class="eyebrow">Pricing</div>
+        <h2 class="section__title">Start free. Go all in when it pays for itself.</h2>
+      </div>
+      <div class="plans">
+        <div class="card plan plan--quiet">
+          <div class="plan__head">
+            <div class="plan__name">Free</div>
+            <div class="plan__price">$0</div>
+            <div class="plan__desc">For testing the waters.</div>
+          </div>
+          <ul class="features">
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Sunday teaser: the hook and the headline move</span></li>
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>The Win, every week</span></li>
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>3 Vault searches a month</span></li>
+          </ul>
+          <a href="#subscribe" class="btn btn--block">Subscribe free</a>
+        </div>
+        <div class="card card--shadow plan">
+          <div class="plan__badge">FIRST 100 ONLY</div>
+          <div class="plan__head">
+            <div class="plan__name">Full Hustle</div>
+            <div class="plan__price-row">
+              <span class="plan__price">$49<span class="plan__period">/yr</span></span>
+              <s class="plan__was">$79/yr</s>
+            </div>
+            <div class="plan__desc">Founding rate, locked in for as long as you stay.</div>
+          </div>
+          <ul class="features">
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>The full Teardown, screenshots and math included</span></li>
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>The Win plus your weekly 4% Assignment</span></li>
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Unlimited Vault: search every brand email we've collected</span></li>
+            <li><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Less than a dollar a week</span></li>
+          </ul>
+          <a href="#subscribe" class="btn btn--accent btn--block">Claim a founding spot</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="closer">
+      <div class="container closer__inner">
+        <h2 class="closer__title">Make your 4% count.</h2>
+        <p class="closer__body">One email. Every Sunday. Read it with your coffee, do the assignment before Monday.</p>
+        <!-- TODO: point action at your newsletter provider's subscribe endpoint. -->
+        <form class="signup signup--dark" action="#" method="post">
+          <label for="email-footer" class="signup__label">Your email</label>
+          <div class="signup__row">
+            <input id="email-footer" name="email" type="email" class="signup__input" placeholder="you@example.com" autocomplete="email" required>
+            <button type="submit" class="btn btn--accent signup__button">Subscribe free</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <span>© 2026 4% Hustle · Built one hour at a time.</span>
+      <nav aria-label="Footer">
+        <a href="https://instagram.com/4percenthustle">Instagram</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#sample">Sample issue</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
